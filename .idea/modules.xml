@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/assignments-flutter-interactivecares.iml" filepath="$PROJECT_DIR$/assignments-flutter-interactivecares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/assignments-flutter-interactivecares.iml" filepath="$PROJECT_DIR$/.idea/assignments-flutter-interactivecares.iml" />
     </modules>
   </component>
 </project>
