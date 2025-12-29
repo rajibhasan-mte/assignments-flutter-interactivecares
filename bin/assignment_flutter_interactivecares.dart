@@ -2,7 +2,7 @@ import 'package:assignment_flutter_interactivecares/assignment_flutter_interacti
 
 /// ************** Assignment-1: Working with Sets in Dart ****************
 /// Author: Rajib Hasan
-/// Date: 29 December, 2025
+/// Submisson date: 29 December, 2025
 /// Submission to: Flutter course: Interactivecares.com
 
 
