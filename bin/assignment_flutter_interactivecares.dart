@@ -1,5 +1,3 @@
-import 'package:assignment_flutter_interactivecares/assignment_flutter_interactivecares.dart' as assignment_flutter_interactivecares;
-
 /// --------------------------------------------------------------------------------------------
 /// Author: Rajib Hasan
 /// Submisson date:  07.01.2026
