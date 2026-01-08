@@ -33,7 +33,7 @@ void main(){
   // double weight = 72;
   // double height = 1.8;
 
-  double BMI = calculateBMI(72, 1.8);
+  double BMI = calculateBMI(72.0, 1.8);
   print("Your BMI is: ${BMI.toStringAsFixed(2)}");
 
   String category = getBMICategory(BMI);
