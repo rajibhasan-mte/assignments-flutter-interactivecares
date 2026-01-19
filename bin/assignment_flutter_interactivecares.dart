@@ -7,22 +7,29 @@
 import 'dart:io';
 
 
+/* ------------ 1. Cass and Encapsulation-------------*/
 class Person {
 
+  /* ------ Private variables ---------------*/
   final String _name;
   final int _age;
 
+  /* ------- Constructor ------------------------------*/
   Person(this._name, this._age);
 
+  /* ------- Public getters -----------------------------------*/
   String get name => _name;
   int get age => _age;
 
+  /* -------- Method to be overridden---------------------------------------*/
   String getInfo() {
     return 'Name: $_name, Age: $_age';
   }
 }
 
 
+
+/* ------------------- 2. Inheritance and method overriding --------------*/
 class Driver extends Person {
   final String vehicle;
 
@@ -34,7 +41,7 @@ class Driver extends Person {
   }
 }
 
-
+/* ------------------ 3. Abastraction and Polymorphism ----------------*/
 abstract class Ride {
   double calculateFare(double distance);
 }
@@ -49,15 +56,19 @@ class BikeRide extends Ride {
 }
 
 
+/* -------------------Polymorphism function ----------------------------*/
 void printFare(Ride ride, double distance) {
   double fare = ride.calculateFare(distance);
   print('Ride Fare: $fare');
 }
 
 
+
+/* ------------------- 4. Main Function ------------------------------*/
 void main() {
 
-
+  print('--- Ride System ---');
+  /* ----------- Driver input ----------------------*/
   stdout.write('Enter driver name: ');
   String name = stdin.readLineSync()!;
 
@@ -67,16 +78,19 @@ void main() {
   stdout.write('Enter vehicle type: ');
   String vehicle = stdin.readLineSync()!;
 
+  /* ----------- Create driver object ----------------*/
   Driver driver = Driver(name, age, vehicle);
 
   print('\nDriver Information:');
   print(driver.getInfo());
 
-
+  /* ----------- Distance input ----------------------*/
   stdout.write('\nEnter ride distance (km): ');
   double distance = double.parse(stdin.readLineSync()!);
 
+  /* ----------- Create Ride object ------------------*/
   Ride bikeRide = BikeRide();
 
+  /* ----------- Print fare using polymorphism ---------*/
   printFare(bikeRide, distance);
 }
