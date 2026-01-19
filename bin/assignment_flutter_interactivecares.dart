@@ -7,21 +7,21 @@
 import 'dart:io';
 
 
-/* ------------ 1. Cass and Encapsulation-------------*/
+/* ------------ 1. Cass and Encapsulation--------------------------*/
 class Person {
 
-  /* ------ Private variables ---------------*/
+  /* -------- Private variables ------------------*/
   final String _name;
   final int _age;
 
-  /* ------- Constructor ------------------------------*/
+  /* ------- Constructor -------------------------*/
   Person(this._name, this._age);
 
-  /* ------- Public getters -----------------------------------*/
+  /* ------- Public getters ---------------------*/
   String get name => _name;
   int get age => _age;
 
-  /* -------- Method to be overridden---------------------------------------*/
+  /* -------- Method to be overridden-------------*/
   String getInfo() {
     return 'Name: $_name, Age: $_age';
   }
@@ -56,7 +56,7 @@ class BikeRide extends Ride {
 }
 
 
-/* -------------------Polymorphism function ----------------------------*/
+/* ---------------Polymorphism function -----------------*/
 void printFare(Ride ride, double distance) {
   double fare = ride.calculateFare(distance);
   print('Ride Fare: $fare');
@@ -64,7 +64,7 @@ void printFare(Ride ride, double distance) {
 
 
 
-/* ------------------- 4. Main Function ------------------------------*/
+/* ------------------- 4. Main Function ----------------------------*/
 void main() {
 
   print('--- Ride System ---');
