@@ -22,6 +22,7 @@ class Person {
   }
 }
 
+
 class Driver extends Person {
   final String vehicle;
 
@@ -33,30 +34,49 @@ class Driver extends Person {
   }
 }
 
+
 abstract class Ride {
   double calculateFare(double distance);
 }
 
 class BikeRide extends Ride {
+  static const double ratePerKm = 10;
+
   @override
   double calculateFare(double distance) {
-    return distance * 10;
+    return distance * ratePerKm;
   }
 }
+
 
 void printFare(Ride ride, double distance) {
   double fare = ride.calculateFare(distance);
   print('Ride Fare: $fare');
 }
 
-void main(){
 
-  Driver driver = Driver('Rahim', 25, 'Bike');
+void main() {
 
+
+  stdout.write('Enter driver name: ');
+  String name = stdin.readLineSync()!;
+
+  stdout.write('Enter driver age: ');
+  int age = int.parse(stdin.readLineSync()!);
+
+  stdout.write('Enter vehicle type: ');
+  String vehicle = stdin.readLineSync()!;
+
+  Driver driver = Driver(name, age, vehicle);
+
+  print('\nDriver Information:');
   print(driver.getInfo());
+
+
+  stdout.write('\nEnter ride distance (km): ');
+  double distance = double.parse(stdin.readLineSync()!);
 
   Ride bikeRide = BikeRide();
 
-  printFare(bikeRide, 5);
-
+  printFare(bikeRide, distance);
 }

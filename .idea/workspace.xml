@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae3b6c0-6ec5-4ff9-a53c-1b332e6d2dfb" name="Changes" comment="" />
+    <list default="true" id="0ae3b6c0-6ec5-4ff9-a53c-1b332e6d2dfb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/assignment_flutter_interactivecares.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/assignment_flutter_interactivecares.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +80,7 @@
       <workItem from="1768645594157" duration="329000" />
       <workItem from="1768757863164" duration="627000" />
       <workItem from="1768798053675" duration="1756000" />
+      <workItem from="1768839841490" duration="761000" />
     </task>
     <servers />
   </component>
